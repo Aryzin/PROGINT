@@ -1,0 +1,24 @@
+CREATE DATABASE  IF NOT EXISTS `test`;
+USE `test`;
+
+CREATE TABLE usuarios (
+  id int NOT NULL AUTO_INCREMENT,
+  nome varchar(45) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone varchar(45) NOT NULL,
+  data_nascimento DATE NOT NULL,
+  login varchar(15) NOT NULL,
+  senha varchar(45) NOT NULL,
+  PRIMARY KEY (id)
+)ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+CREATE TABLE cliente (
+  id int NOT NULL AUTO_INCREMENT,
+  nome varchar(45) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone varchar(45) NOT NULL,
+  data_nascimento DATE NOT NULL,
+  endereco varchar(45) NOT NULL,
+  PRIMARY KEY (id)
+)ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+SELECT * FROM USUARIOS;
+DROP TABLE USUARIOS;
